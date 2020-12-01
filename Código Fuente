@@ -1,0 +1,198 @@
+Ejercicio 1
+
+//Abrir la librerías//
+#include <stdio.h>
+// Deterinar si un número es positivo o negativo//
+
+int main (){
+	//Bloque de variables//
+	//Variables enteras//
+	
+	int numero;
+	
+	/* 
+	bloque de instrucciones
+	*/
+	
+	printf("Ingrese el número:\n");
+	scanf("%d", &numero);
+	
+	if ( numero > 0)	
+		printf("El número %d es positivo.\n" ,numero);
+		
+	if ( numero <= 0)
+		;printf("El número %d es cero o negativo.\n" ,numero);
+		
+	return 0;	
+}
+
+
+Ejercicio 2
+
+//Abrir librerías//
+#include<stdio.h>
+
+/* 
+	Este programa determina cuanto debera pagar por equis cantidad de lápices 
+*/
+
+int main(){
+	 //Bloque de variables//
+	 //Variables enteras//
+	 
+	 int total, pagar;
+	 float cantidadDeLapices;
+	 
+	 
+	 /*
+	 Bloque de instrucciones
+	 */
+	 
+	 printf("Ingrese la cantidad de lapices:\n ");
+	 scanf("%f, &cantidadDeLapices");
+	 
+	if ( cantidadDeLapices >= 1000){
+		pagar = cantidadDeLapices * 0.85;
+	 
+}
+ 	else ( cantidadDeLapices < 1000);
+		pagar = cantidadDeLapices * 0.92;
+	
+	total = pagar;	
+	printf("El total a pagar es %d.\n", total);	
+	
+	 
+	return 0;
+}
+
+
+Ejercicio 3
+
+//Abrir librerías//
+#include<stdio.h>
+/*
+Este programa determina el precio final que debe pagar una persona por comprar un traje y el descuento que obtendrá
+*/
+
+int main(){
+	//bloque de variables//
+	//variables reales//
+	
+	float descuento, precioFinal, precioPorTraje;
+	
+	/* Bloque de instruciones
+	*/
+	
+	printf("Ingrese el precio del traje:\n");
+	scanf("%f", &precioPorTraje);
+	
+	if (precioPorTraje > 25000)
+		descuento = precioPorTraje * 0.15;
+		
+	else 
+		descuento = precioPorTraje * 0.08;
+		
+	precioFinal = precioPorTraje - descuento;
+	printf("Valor de descuento: %g\n", descuento);
+	printf("Valor de precio final: %g\n", precioFinal);
+	
+	return 0;
+		
+}
+
+
+Ejercicio 4
+
+//Abrir librerías//
+#include<stdio.h>
+/*
+Este programa nos ayuda a determinar cuál de las tres cantidades es mayor
+*/
+
+//Bloque de variables//
+
+int main(){
+	//Variables reales//
+	int A, B, C, mayor;
+	
+	/*
+	Bloque de instrucciones
+	*/
+	
+	printf("Ingrese el valor de A :\n");
+	scanf("%d", &A);
+	printf("Ingrese el valor de B :\n");
+	scanf("%d", &B);
+	printf("Ingrese el valor de C :\n");
+	scanf("%d", &C);
+	
+	if ( A >= B && A >= C)
+		printf("%d es mayor.\n", A);
+
+	else 
+		if(B > C)
+			printf("%d es el mayor.\n", B);
+		
+		else 
+			printf("%d es el mayor. \n", C);
+		
+	
+	return 0;
+		
+}
+
+
+Ejercicio 5
+
+//Abrir las librerías//
+#include<stdio.h>
+
+/* 
+Este programa permite concoer el pago a la compañía de autobuses y lo que debe pagar cada alumno por el viaje
+*/
+
+//Bloque de variables//
+int main(){
+	
+	 //variables reales //
+	 
+	 float numeroDeAlumnos, pagoDeAutobus, costoAlumno;
+	 
+	 /*
+	 Bloque de instrucciones
+	 */
+	 
+	 printf("Ingrese el numero de alumnos:\n");
+	 scanf("%g", &numeroDeAlumnos);
+	 
+	costoAlumno = 0;
+    pagoDeAutobus = 0;
+    
+    if (numeroDeAlumnos >= 100){
+    	
+        costoAlumno = 65;
+        pagoDeAutobus = costoAlumno * numeroDeAlumnos;
+    }
+    
+    if (numeroDeAlumnos >= 50 &&numeroDeAlumnos < 100){
+    	
+        costoAlumno = 70;
+        pagoDeAutobus = costoAlumno * numeroDeAlumnos;
+    }
+    if (numeroDeAlumnos >= 30 &&numeroDeAlumnos < 50){
+    	
+        costoAlumno = 95;
+        pagoDeAutobus = costoAlumno * numeroDeAlumnos;
+    }
+    if (numeroDeAlumnos >= 30 &&numeroDeAlumnos < 50){
+    	
+        pagoDeAutobus = 4000;
+        costoAlumno = pagoDeAutobus / numeroDeAlumnos;
+    }
+    printf ("Valor de costo por alumno: %g\n", costoAlumno);
+    printf ("Valor de pago por el servicio: %g\n", pagoDeAutobus);
+    
+    return 0;
+
+}
+
